@@ -1,0 +1,213 @@
+body {
+    display: grid;
+    background-color: #352e25f1;
+  }
+  
+  /*cabecalho*/
+  .header {
+    background-color:rgb(206, 177, 141);
+    grid-column: 1/6;
+    grid-row: 1/2;
+    margin: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+  }
+  
+  /*cabecalho - navegacao links*/
+  .header nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /*cabecalho - listas desordenadas*/
+  .header ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 30px;
+  }
+  
+  /*cabecalho - hiperlinks*/
+  .header a {
+    border-color: black;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  /*cabecalho - imagens do hiperlinks*/
+  .header a img {
+    margin: 10px;
+  }
+  
+  /*cabecalho - item da lista*/
+  .header li {
+    border: 1px solid black;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e48c19;
+    color: #333333;
+    font-weight: bold;
+    list-style-type: none;
+  
+  }
+  
+  /*cabecalho - item da lista ao passa o*/
+  .header li:hover {
+    color: #000000;
+  }
+  
+  /*cabecalho - classe logo*/
+  .logo {
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+  
+  /*main*/
+  .main {
+    grid-column: 1/6;;
+    grid-row: 2/3;
+    display:grid;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  
+  /*main - quadro onde fica as Partidas*/
+  .apresentar_jogos {
+    background-color: #352e25f1;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  /*main - quadro da Partida*/
+  .apresentar_partida {
+    background-color: #e48c19;
+    width: 150px;
+    height: 170px;
+    margin: 7px;
+    border: 1px solid black;
+    border-radius:10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 230px;
+  
+  }
+  
+  /*main - hiperlinks do quadro da Partida*/
+  .apresentar_partida a {
+    text-decoration: none;
+    color: #333333;
+  }
+  
+  /*main - hiperlinks do quadro da Partida, ao passar o mouse*/
+  .apresentar_partida a:hover {
+    color: #000000;
+  }
+  
+  /*main - Atributo nome do quadro da Partida*/
+  .apresentar_nome {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /*main - margem inferior entre os atributos da partida*/
+  .apresentar_esporte,
+  .apresentar_cidade,
+  .apresentar_bairro,
+  .apresentar_horario,
+  .apresentar_data,
+  .apresentar_qntd {
+    margin-bottom: 5px;
+  }
+  
+  
+  /*main - tipo da fonte do que está antes dos atribudos*/
+  .apresentar_esporte::before,
+  .apresentar_cidade::before,
+  .apresentar_bairro::before,
+  .apresentar_horario::before,
+  .apresentar_data::before,
+  .apresentar_qntd::before {
+    font-weight: bold;
+  }
+  
+  
+  .apresentar_esporte::before {
+    content: "Esporte: ";
+  }
+  
+  .apresentar_cidade::before {
+    content: "Cidade: ";
+  }
+  
+  .apresentar_bairro::before {
+    content: "Bairro: ";
+  }
+  
+  .apresentar_horario::before {
+    content: "Horário: ";
+  }
+  
+  .apresentar_data::before {
+    content: "Data: ";
+  }
+  
+  .apresentar_qntd::before {
+    content: "Quantidade: ";
+  }
+  
+  /*main - quadro de fundo da pesquisa*/
+  .pesquisarIndex{
+    background-color: #352e25f1;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0px 10px;
+  }
+  
+  .filtrarPartidas{
+    border: 1px solid black;
+    border-radius: 3px;
+    font-weight: bolder;
+    color: #333333;
+    background-color: #e48c19;
+  }
+  
+  .filtrarPartidas:hover{
+    color: #000000;
+  }
+  
+  #titulo{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:white;
+    text-align: center;
+  }
+  
+  /*footer*/
+  .footer {
+    grid-column: 1/6;
+    grid-row: 3/4;
+  
+  }
+  
+  /*copyright*/
+  .copyright {
+    grid-column: 1/6;
+    grid-row: 4/5;
+  }
+  

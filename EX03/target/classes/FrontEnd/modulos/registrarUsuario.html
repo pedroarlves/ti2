@@ -1,0 +1,78 @@
+<!--
+    Authors: Pedro Rodrigues Alves and Gabriel Felipe Quaresma.
+
+    obs: Falta fazer as iterações java script, e configurar o botao mostrar senha".
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/css/registraJogador.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsNOW</title>
+</head>
+
+<body>
+    <header class="header" id="header_criar">
+        <nav>
+            <a href="../index.html"><img class="logo" src="../assets/imgs/SPORTSlogo.png" alt="SportsNOW" width="80"
+                    height="80"></a>
+            <ul>
+                <a href="./login.html">
+                    <li>Login</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>Registrar Jogador</h1>
+        <form action="http://localhost:6789/Jogador/insert" method="post">
+            <div id="div_nome_registro" class="div_nome_registro">
+                <label for="nome_registro">Nome:</label>
+                <input type="text" id="nome_registro" name="nome" required>
+            </div><br>
+            <div id="div_nasc_registro" class="div_nasc_registro">
+                <label for="usuario_nasc">Nascimento:</label>
+                <input type="date" id = "usuario_nasc" name="data_nascimento" required>
+            </div><br>
+
+            <div id="div_cpf_registro" class="div_cpf_registro">
+                <label for="cpf_registro">CPF:</label>
+                <input type="text" id="cpf_registro" name="cpf" required>
+            </div><br>
+
+            <div id="div_senha_registro" class="div_senha_registro">
+                <label for="senha_registro">Senha:</label>
+                <input type="password" id="senha_registro" name="senha_registro" required>
+            </div><br>
+
+            <div id="div_senha_confirmacao" class="div_senha_confirmacao">
+                <label for="senha_confirmacao">Confirmar Senha:</label>
+                <input type="password" id="senha_confirmacao" name="senha_confirmacao" required>
+            </div><br>
+            
+            <div class="div_visibilidadeSenha">
+                <label for="visibilidadeSenha" >Mostrar Senha</label>
+                <button type="button" id="visibilidadeSenha" class="visibilidadeSenha" onclick="mostrarSenhaR1()">
+                    <img src="../assets/imgs/olho_f.png" width="30px">
+                </button>
+            </div><br>
+            
+            <div class="div_submit_registro">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+        <p>Quer cadastrar um estabelecimento? <a href="./registrarEstabelecimento.html">Cadastro Estabelecimento</a></p>
+        
+    </main>
+    <script src="../assets/scripts/mostrarSenha.js"></script>
+</body>
+
+</html>

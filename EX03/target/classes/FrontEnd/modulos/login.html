@@ -1,0 +1,62 @@
+<!--
+    Authors: Pedro Rodrigues Alves and Gabriel Felipe Quaresma.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsNOW</title>
+</head>
+
+<body>
+    <header class="header" id="header_criar">
+        <nav>
+            <a href="../index.html"><img class="logo" src="../assets/imgs/SPORTSlogo.png" alt="SportsNOW" width="80"
+                    height="80"></a>
+            <ul>
+                <a href="./registrarUsuario.html">
+                    <li>Registrar-se</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>Iniciar Sessão</h1>
+        <form action="http://localhost:6789/Jogador/login" method="post" class formulario>
+            <div id="div_user" class="div_user">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div><br>
+            <div id="div_senha" class="div_senha">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div><br>
+            
+            <div class="div_visibilidadeSenha">
+                <label for="visibilidadeSenha">Mostrar Senha</label>
+                <button type="button" id="visibilidadeSenha" class="visibilidadeSenha" onclick="mostrarSenhaLogin()">
+                    <img src="../assets/imgs/olho_f.png" width="30px">
+                </button>
+                
+            </div><br>
+            
+            <div class="div_submit">
+                <input type="submit" id="btnLogin" value="Entrar">
+            </div>
+        </form>
+    
+        <p><a href="">esqueci a senha</a></p>
+        
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</body>
+<script src="../assets/scripts/mostrarSenha.js"></script>
+
+</html>

@@ -1,0 +1,233 @@
+<!-- 
+    Authors: Pedro Rodrigues Alves and Gabriel Felipe Quaresma
+
+    Pendencias desta página: Criar o back end,  e melhorar js!
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/rodape.css">
+    <link rel="stylesheet" href="../assets/css/editar.css">
+
+    <title>SportsNOW</title>
+</head>
+
+<body>
+
+    <!--cabecalho-->
+    <header class="header" id="header_criar">
+        <nav>
+            <a href="../index.html"><img class="logo" src="../assets/imgs/SPORTSlogo.png" alt="SportsNOW" width="80"
+                    height="80"></a>
+            <ul>
+                <a href="../index.html">
+                    <li>Buscar Jogos</li>
+                </a>
+                <a href="./perfil.html">
+                    <li>Perfil</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <!--corpo-->
+    <main class="main" id="main_criar">
+
+        <div class="fundoEditarPartidas">
+            <form action="" method="post" class="formulario" id ="editarForm">
+                <!--cadastrar nome da pelada-->
+                <div class="editar_nome_pelada" id="editar_nome_pelada">
+                    <label for="nome_pelada">Nome</label>
+                    <input type="text" id="nome_pelada" name="nome_pelada" placeholder="Escreva o nome da pelada."
+                        required>
+                </div>
+
+                <!--cadastrar esporte da pelada-->
+                <div id="editar_esporte_pelada" class="editar_esporte_pelada">
+                    <label for="esporte_pelada">Esporte</label>
+                    <select name="esporte_pelada" id="esporte_pelada">
+                        <option value="futebol">Futebol</option>
+                        <option value="volei">Volei</option>
+                        <option value="basquete">Basquete</option>
+                        <option value="handball">Handball</option>
+                        <option value="fut-volei">Fut-volei</option>
+                        <option value="Beach Tennis">Beach Tennis</option>
+                        <option value="Badminton">Badminton</option>
+                        <option value="Peteca">Peteca</option>
+                    </select>
+                </div>
+
+
+
+                <!--cadastrar quantidade de peladeiros-->
+                <div class="editar_tamanho_pelada" id="editar_tamanho_pelada">
+                    <label for="tamanho_pelada">Quantidade</label>
+                    <select name="tamanho_pelada" id="tamanho_pelada" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                    </select>
+                </div>
+
+
+                <!--Cadastrarr Frequencia da Partida-->
+                <div id="editarFrequenciaPartida" class="editarFrequenciaPartida">
+                    <label for="editar_tipoPartida">Tipo:</label>
+                    <select name="editar_tipoPartida" id="editar_tipoPartida">
+                        <option value="partidaUnica">Única</option>
+                        <option value="partidaSemanal">Semanal</option>
+                    </select>
+                </div>
+
+
+
+                <h3>Endereço</h3>
+                <!--cadastrar local da pelada-->
+                <div id="editar_local_pelada" class="editar_local_pelada">
+                    <label for="editar_cidade_pelada">Cidade</label>
+                    <input type="text" name="editar_cidade_pelada" id="editar_cidade_pelada" required>
+                    <label for="editar_bairro_pelada">Bairro</label>
+                    <input type="text" id="editar_bairro_pelada" name="editar_bairro_pelada" placeholder="Bairro" required>
+                    <label for="editar_logradouro_pelada">Logradouro</label>
+                    <input type="text" name="editar_logradouro_pelada" id="editar_logradouro_pelada" required>
+                    <label for="editar_numero_pelada">Número</label>
+                    <input type="number" name="editar_numero_pelada" id="editar_numero_pelada" required>
+                </div>
+
+                <h3>Agendamento</h3>
+                <!--Horario e data-->
+                <div id="editar_horarioEdata_pelada" class="editar_horarioEdata_pelada">
+                    <!--cadastrar horario de inicio da pelada-->
+                    <div id="editar_horario_inicio" class="editar_horario_inicio">
+                        <label for="editar_horario_inicio">Inicio</label><br>
+                        <input type="time" id="editar_horario_inicio" required>
+                    </div>
+
+                    <!--cadastrar horario de fim da pelada-->
+                    <div id="editar_horario_fim" class="editar_horario_fim">
+                        <label for="editar_horario_fim">Fim</label><br>
+                        <input type="time" name="editar_horario_fim" id="editar_horario_fim" required>
+                    </div>
+
+                    <!--cadastrar data da pelada-->
+                    <div id="editar_data" class="editar_data">
+                        <label for="editar_data_pelada">data</label>
+                        <input type="date" name="editar_data_pelada" id="editar_data_pelada" required>
+                    </div>
+
+                </div>
+
+                <!--cadastrar valor da pelada-->
+                <div class="valorPartida">
+                    <label for="editar_valorPartida">Valor</label>
+                    <input type="number" name="editar_valorPartida" id="editar_valorPartida" placeholder="100,0">
+                </div>
+
+                <!--botao de salvar-->
+                <div id="submit" class="submit">
+                    <a href="./partida.html"><button id="btnEditarPelada">Enviar</button></a>
+                </div>
+            </form>
+            
+            <!-- Seu JavaScript para adicionar o nome da partida como parâmetro na URL -->
+        <script>
+                // Pega o nome atual da partida da página ou de onde quer que ele esteja disponível.
+                const urlParams = new URLSearchParams(window.location.search);
+                const idPartida = urlParams.get("id") 
+    
+                var form = document.getElementById('editarForm'); 
+                var actionURL = "http://localhost:6789/Partida/update/" + idPartida;
+                form.action = actionURL;
+            </script>
+        </div>
+    </main>
+
+    
+e
+    <!--rodape-->
+    <footer class="footer" id="footer_criar">
+
+        <!--Quem somos-->
+        <div class="quem_somos" id="quem_somos">
+            <h3>SportsNOW</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde rerum distinctio assumenda quidem.
+                Voluptatibus unde culpa ratione aliquid, aut enim esse nihil quam cumque, accusantium sapiente,
+                inventore pariatur vel blanditiis.</p>
+        </div>
+
+        <!--Links Usaveis-->
+        <div class="links_usaveis" id="links_usaveis">
+            <h3>LINKS USÁVEIS</h3>
+            <ul>
+                <li><a href="ajuda.html">Ajuda</a></li>
+                <li><a href="politica_privacidade.html">Política de Privacidade</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+            </ul>
+        </div>
+
+        <!--Redes Sociais-->
+        <div class="redes_sociais" id="redes_sociais">
+            <h3>REDES SOCIAIS</h3>
+            <ul>
+                <li><a href="https://facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com/" target="_blank">Twiter</a></li>
+                <li><a href="https://www.tiktok.com/" target="_blank">Tik Tok</a></li>
+            </ul>
+        </div>
+
+
+        <!--Contato-->
+        <div class="contato" id="contato">
+            <h3>CONTATO</h3>
+            <p>Belo Horizonte, CEP 30535.610, Brasil</p>
+            <p>sports.now@gmail.com</p>
+            <p>+ 55 33 99155-1615</p>
+            <p>+ 55 33 99155-1615</p>
+        </div>
+
+    </footer>
+    <!--COPYRIGHT-->
+    <p class="copyright" id="copyright">© 2023 Copyright: sportsnow.com</p>
+
+    <!-- chamar arquivo java script-->
+    <script src="../assets/scripts/criar.js"></script>
+</body>
+
+</html>

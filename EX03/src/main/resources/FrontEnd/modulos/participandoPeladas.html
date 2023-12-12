@@ -1,0 +1,109 @@
+<!-- 
+    Authors: Pedro Rodrigues Alves and Gabriel Felipe Quaresma
+
+    Pendencias desta página: Criar o back end, criar a opcao de filtro, e melhorar o hover dos botoes e hipelinks!
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/rodape.css">
+    <link rel="stylesheet" href="../assets/css/participandoPeladas.css">
+
+    <title>SportsNOW</title>
+
+</head>
+
+<body onload="imprimeDados(); ">>
+<!--cabecalho-->
+    <div class="header" id="header_index">
+        <div class="header" id="header_index">
+            <nav>
+                <a href="../index.html"><img class="logo" src="../assets/imgs/SPORTSlogo.png"
+                    alt="SportsNOW"
+                    width="80"
+                    height="80"></a>
+                <ul>
+                    <a href="../index.html">
+                        <li>Buscar Partidas</li>
+                    </a>
+                    <a href="criar.html">
+                        <li>Criar Jogos</li>
+                    </a>
+                    <a href="perfil.html">
+                        <li>Perfil</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+<!--corpo-->
+    <main class="main" id="main_index">
+        <div class="pesquisarIndex" >
+            <input type="search" name="pesquisarPartidas" id="pesquisarPartidas" class="pesquisarPartidas">
+            <button class="filtrarPartidas" id="btnFiltrar">Pesquisar</button> 
+
+        </div>
+        <h2 id="titulo">Peladas que você está participando</h2>
+        <div class="apresentar_jogos" id="apresentar_jogos">
+            <!-- BEGIN: Code to show the games that the user is participating -->
+
+            <!-- END: Code to show the games that the user is participating -->
+        </div> <!--mostrar partidas-->
+    </main>
+    
+
+<!--rodape-->
+    <footer class="footer" id="footer_index">
+
+        <!--Quem somos-->
+        <div class="quem_somos" id="quem_somos">
+            <h3>SportsNOW</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde rerum distinctio assumenda quidem. Voluptatibus unde culpa ratione aliquid, aut enim esse nihil quam cumque, accusantium sapiente, inventore pariatur vel blanditiis.</p>
+        </div>
+
+        <!--Links Usaveis-->
+        <div class="links_usaveis" id="links_usaveis">
+            <h3>LINKS USÁVEIS</h3>
+            <ul>
+                <li><a href="./modulos/ajuda.html">Ajuda</a></li>
+                <li><a href="./modulos/politica_privacidade.html">Política de Privacidade</a></li>
+                <li><a href="./modulos/feedback.html">Feedback</a></li>
+                <li><a href="./modulos/FAQ.html">FAQ</a></li>
+            </ul>
+        </div>
+
+        <!--Redes Sociais-->
+        <div class="redes_sociais" id="redes_sociais">
+            <h3>REDES SOCIAIS</h3>
+            <ul>
+                <li><a href="https://facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com/" target="_blank">Twiter</a></li>
+                <li><a href="https://www.tiktok.com/" target="_blank">Tik Tok</a></li>
+            </ul>
+        </div>
+
+
+        <!--Contato-->
+        <div class="contato" id="contato">
+            <h3>CONTATO</h3>
+            <p>Belo Horizonte, CEP 30535.610, Brasil</p>
+            <p>sports.now@gmail.com</p>
+            <p>+ 55 33 99155-1615</p>
+            <p>+ 55 33 99155-1615</p>
+        </div>
+
+    </footer>
+<!--COPYRIGHT-->
+    <p class="copyright" id="copyright">© 2023 Copyright: sportsnow.com</p>
+
+<!-- chamar arquivo java script-->
+    <script src="../assets/scripts/validate.js"></script>
+    <script src="../assets/scripts/criar.js"></script>
+    <script src="../assets/scripts/participarPartida.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</body>
+</html>

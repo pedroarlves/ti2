@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #352e25f1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+}
+
+/*cabecalho*/
+.header {
+  background-color: rgb(206, 177, 141);
+    border: 1px solid black;
+  }
+  
+  /*cabecalho - div de navegacao*/
+  .header nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /*cabecalho - listas desordenadas*/
+  .header ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 30px;
+  }
+  
+  /*cabecalho - hiperlinks*/
+  .header a {
+    border-color: black;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  /*cabecalho - imgs dos hiperlinks*/
+  .header a img {
+    margin: 10px;
+  }
+  
+  /*cabecalho - itens da lista*/
+  .header li {
+    border: 1px solid black;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e48c19;;
+    color: black;
+    font-weight: bold;
+    list-style-type: none;
+  }
+  
+  /*cabecalho - itens da lista ao passar o mouse*/
+  .header li:hover {
+    background-color: #eca64af1;
+  }
+  
+  /*cabecalho - logo*/
+  .logo {
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+
+
+/*main*/
+main{
+    padding: 30px;
+    min-width: 50%;
+    margin: auto;
+    background-color: #e48c19;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+/*form*/
+main form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+/*form - h1*/
+main h1{
+    text-align: center;
+}
+
+/*form - labels*/
+.div_descr_estabelecimento_registro label,
+.div_senha_estabelecimento_registro label,
+.div_nome_estabelecimento_registro label,
+.div_senha_estabelecimento_confirmacao label,
+.div_cnpj_registro label,
+.div_estabelecimento_endereco label,
+.div_tipo_estabelecimento label{
+    font-size:xx-large;
+}
+
+/*form - inputs*/
+.div_descr_estabelecimento_registro input,
+.div_senha_estabelecimento_registro input,
+.div_nome_estabelecimento_registro input,
+.div_senha_estabelecimento_confirmacao input,
+.div_cnpj_registro input,
+.div_estabelecimento_endereco input,
+.div_estabelecimento_endereco select,
+.div_tipo_estabelecimento select
+{
+  min-width: 50%;
+  padding: 10px;
+  font-size:-large;
+}
+
+.descr_estabelecimento_registro{
+  min-height: 50px;
+}
+
+/*form - divs*/
+.div_descr_estabelecimento_registro, 
+.div_senha_estabelecimento_registro,
+.div_nome_estabelecimento_registro,
+.div_senha_estabelecimento_confirmacao,
+.div_cnpj_registro
+{
+    display: flex;
+    justify-content:space-between;
+}
+
+/*form - div de visibilidade da senha*/
+.div_visibilidadeSenha label{
+    font-size: large;
+}
+
+.div_visibilidadeSenha{
+  text-align: right;
+}
+
+
+/*form - div do endereco do estabelecimento*/
+.div_estabelecimento_endereco{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.div_tipo_estabelecimento{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div_tipo_estabelecimento div{
+    align-content: center;
+}
+
+
+/*form - div do btn de enviar o formulario*/
+.div_submit_estabelecimento_registro{
+    text-align: right;
+}
+
+/*form - div do input do btn de enviar o formulario*/
+.div_submit_estabelecimento_registro input{
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #2fb80df1;
+
+}
+ 
+/*form - div do input do btn de enviar o formulario ao passar o mouse*/
+.div_submit_estabelecimento_registro input:hover{
+    background-color: #5ff13a;
+}
+
+

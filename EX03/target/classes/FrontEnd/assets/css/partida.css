@@ -1,0 +1,212 @@
+  *{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /*cabecalho*/
+  .header {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    background-color: #352e25f1;;
+    border-bottom: 1px solid black;
+  }
+  
+  /*cabecalho - navegacao links*/
+  .header nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /*cabecalho - listas desordenadas*/
+  .header ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 30px;
+  }
+  
+  /*cabecalho - hiperlinks*/
+  .header a {
+    border-color: black;
+    text-decoration: he;
+    margin-left: 10px;
+  }
+  
+  /*cabecalho - imagens do hiperlinks*/
+  .header a img {
+    margin: 10px;
+  }
+  
+  /*cabecalho - item da lista*/
+  .header li {
+    border: 1px solid black;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e48c19;
+    color: #333333;
+    font-weight: bold;
+    list-style-type: none;
+  
+  }
+  
+  /*cabecalho - item da lista ao passa o*/
+  .header li:hover {
+    color: #000000;
+  }
+  
+  /*cabecalho - classe logo*/
+  .logo {
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+  
+  /*main*/
+  .main {
+    min-height: 77vh;
+    min-width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:rgb(248, 220, 186);
+    
+  }
+
+  .partida_informacoes{
+    /** /border-right:1px solid black ;
+    border-left:1px solid black ;/**/
+    display: grid;  
+    flex-direction: column;
+    background-color:rgb(248, 220, 186);
+    padding: 10px;
+  }
+
+  .nome_partida{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    text-align: right;
+  }
+  .partida_valor{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    text-align: right;
+  }
+
+  .id_partida{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    text-align: center;
+  }
+
+  .qntd_partida{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+  }
+
+  .partida_esporte{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    text-align: center;
+  } 
+  .partida_tipo{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    text-align: center;
+  }
+
+  .partida_inicio{
+    grid-row: 4/5;
+    grid-column: 1/2;
+    text-align: center;
+  }
+  .partida_fim{
+    grid-row: 4/5;
+    grid-column: 2/3;
+    text-align: center;
+  }
+  .partida_data{
+    grid-row: 5/6;
+    grid-column: 1/3;
+    text-align: center;
+  }
+
+  .partida_endereco{
+    grid-row: 7/10;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partida_btns {
+    grid-row: 10/12;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .partida_btns div button{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .btnEntrar{
+    background-color: rgb(8, 255, 8);
+  }
+
+  .btnEntrar:hover{
+    background-color: rgb(29, 102, 29);
+  }
+
+  .btnSair{
+    background-color: rgba(173, 22, 22, 0.877);
+  }
+
+  .btnSair:hover{
+    background-color: rgba(230, 82, 82, 0.877);
+  }
+
+  .btnExcluir{
+    background-color: rgb(255, 218, 8);
+  }
+
+  .btnExcluir:hover{
+    background-color: rgb(207, 186, 66);
+  }
+
+
+
+  .btnEditar{
+    background-color: rgb(8, 123, 255);
+  }
+
+  .btnEditar:hover{
+    background-color: rgb(1, 57, 121);
+  }
+
+  h2{
+    text-align: center;
+  }  
+  
+
+  .partida_jogadores{
+    width: 50%;
+  }
+  
+  
+  /*copyright*/
+  .copyright {
+    grid-column: 1/6;
+    grid-row: 3/2;
+  }
+  

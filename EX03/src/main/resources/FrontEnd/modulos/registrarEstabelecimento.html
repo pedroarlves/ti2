@@ -1,0 +1,157 @@
+<!--
+    Authors: Pedro Rodrigues Alves and Gabriel Felipe Quaresma.
+
+    obs: Falta fazer as iterações java script, e conectar ao banco de dados, e configurar o botao mostrar senha, colocar place holderes".
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/css/registraEstabelecimento.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsNOW</title>
+</head>
+
+
+<body>
+    <header class="header" id="header_criar">
+        <nav>
+            <a href="../index.html"><img class="logo" src="../assets/imgs/SPORTSlogo.png" alt="SportsNOW" width="80"
+                    height="80"></a>
+            <ul>
+                <a href="./login.html">
+                    <li>Login</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>Registrar Estabelecimento</h1>
+        <!--Formulario-->
+        <form action="http://localhost:6789/Estabelecimento/insert" method="post">
+            <!--registrar nome do estabelecimento-->
+            <div id="div_nome_estabelecimento_registro" class="div_nome_estabelecimento_registro">
+                <label for="nome_estabelecimento_registro">Nome:</label>
+                <input type="text" id="nome_estabelecimento_registro" name="nome_estabelecimento_registro" required>
+            </div><br>
+
+            <!--registrar descricao do estabelecimento-->
+            <div id="div_descr_estabelecimento_registro" class="div_descr_estabelecimento_registro">
+                <label for="descr_estabelecimento_registro">Descrição:</label>
+                <input type="text" id="descr_estabelecimento_registro" name="descr_estabelecimento_registro" class="descr_estabelecimento_registro">
+            </div><br>
+
+            <!--registrar cnpj do estabelecimento-->
+            <div id="div_cnpj_registro" class="div_cnpj_registro">
+                <label for="cnpj_registro">CNPJ:</label>
+                <input type="text" id="cnpj_registro" name="cnpj_registro" required>
+            </div><br>
+
+            <!--registrar senha do estabelecimento-->
+            <div id="div_senha_estabelecimento_registro" class="div_senha_estabelecimento_registro">
+                <label for="senha_estabelecimento_registro">Senha:</label>
+                <input type="password" id="senha_estabelecimento_registro" name="senha_estabelecimento_registro"
+                    required>
+            </div><br>
+
+            <!--confirmar senha do estabelecimento-->
+            <div id="div_senha_estabelecimento_confirmacao" class="div_senha_estabelecimento_confirmacao">
+                <label for="senha_confirmacao_estabelecimento">Confirmar Senha:</label>
+                <input type="password" id="senha_confirmacao_estabelecimento" name="senha_confirmacao_estabelecimento"
+                    required>
+            </div><br>
+
+            <!--definir visibilade da senha-->
+            <div class="div_visibilidadeSenha">
+                <label for="visibilidadeSenha">Mostrar Senha</label>
+                <button type="button" id="visibilidadeSenha" class="visibilidadeSenha" onclick="mostrarSenhaR2()">
+                    <img src="../assets/imgs/olho_f.png" width="30px">
+                </button>
+            </div><br>
+
+            <h1>Endereço</h1>
+
+            <!--registrar endereco estabelecimento-->
+            <div id="div_estabelecimento_endereco" class="div_estabelecimento_endereco">
+
+                <!--registrar UF do estabelecimento-->
+                <label for="estabelecimento_UF">UF</label>
+                <select type="text" name="estabelecimento_UF" id="estabelecimento_UF">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+
+                <!--registrar cidade estabelecimento-->
+                <label for="estabelecimento_cidade">Cidade:</label>
+                <input type="text" name="estabelecimento_cidade" id="estabelecimento_cidade">
+
+                <!--registrar logradouro do estabelecimento-->
+                <label for="estabelecimento_logr">Logradouro:</label>
+                <input type="text" name="estabelecimento_logr" id="estabelecimento_logr">
+
+                <!--registrar numero do estabelecimento-->
+                <label for="estabelecimento_num">Numero:</label>
+                <input type="text" name="estabelecimento_num" id="estabelecimento_num">
+
+                <!--registrar bairro do estabelecimento-->
+                <label for="estabelecimento_bairro">Bairro:</label>
+                <input type="text" name="estabelecimento_bairro" id="estabelecimento_bairro">
+            </div><br>
+
+            
+            <!--definir tipo do estabelecimento-->
+            <div class="div_tipo_estabelecimento">
+                <label for="tipo_estabelecimento">Tipo:</label>
+                <select name="tipo_estabelecimento" id="tipo_estabelecimento">
+                    <option value="tipo_quadra">Quadra</option>
+                    <option value="tipo_campo">Campo</option>
+                    <option value="tipo_piscina">Piscina</option>
+                    <option value="tipo_areia">Areia</option>
+                </select>
+            </div> <br>
+
+            <!--Enviar Formulario-->
+            <div class="div_submit_estabelecimento_registro">
+                <input type="submit" value="Cadastrar">
+            </div>
+
+        </form>
+        <!--link para cadastrar jogador-->
+        <p>Quer cadastrar como Jogador? <a href="./registrarUsuario.html">Cadastro Jogador</a></p>
+
+    </main>
+</body>
+<script src="../assets/scripts/mostrarSenha.js"></script>
+
+</html>

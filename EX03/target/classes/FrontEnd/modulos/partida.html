@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/rodape.css">
+    <link rel="stylesheet" href="../assets/css/partida.css">
+
+    <title>Play Portal</title>
+</head>
+
+<body onload="imprimeDados() ">
+    <!--cabecalho-->
+    <header class="header" id="header_partida">
+        <nav>
+            <a href="../index.html"><img class="logo" src="../assets/imgs/SPORTSlogo.png" alt="logo"></a>
+            <ul>
+                <a href="../index.html">
+                    <li>Buscar Partidas</li>
+                </a>
+                <a href="./perfil.html">
+                    <li>Perfil</li>
+                </a>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!--corpo-->
+    <main class="main" id="main_partida">
+        <div class="partida_informacoes">
+            <div id="nome_partida" class="nome_partida">Nome </div>
+            <div id="id_partida" class="id_partida" name="id_partida">Id</div>
+            <div class="partida_valor" id="valor partida">valor</div>
+            <div class="partida_esporte" id="esporte_partida">esporte </div>
+            <div class="qntd_partida" id="qntd_partida">qntd</div>
+
+            <div class="partida_tipo" id="tipo_partida">Tipo de partida</div>
+            <div class="partida_inicio" id="inicio_partida"> Inicio</div>
+            <div class="partida_fim" id="fim_partida">Fim</div>
+            <div class="partida_data" id="data_partida">Data</div>
+
+
+            <h2>Endereço</h2><br>
+            <div class="partida_endereco">
+                <div class="partida_cidade" id="cidade_partida">
+                    Cidade
+                </div><br>
+                <div class="partida_logr" id="logr_partida">
+                    Logr
+                </div> <br>
+                <div class="partida_num" id="num_partida">
+                    Num
+                </div><br>
+                <div class="partida_bairro" id="bairro_partida">
+                    Bairro
+                </div><br>
+            </div>
+            <br>
+            <div class="partida_btns">
+                <div>
+                    <button class="btnEntrar" id ="btnEntrar" type="button">Entrar</button>
+                </div>
+                <div>
+                    <button class="btnSair" type="button">Sair</button>
+                </div>
+            </div>
+            <div class="partida_jogadores">
+
+            </div>
+        </div>
+    </main>
+
+    <p class="copyright" id="copyright">© 2023 Copyright: playportal.com</p>
+
+    <!-- chamar arquivo java script-->
+</body>
+    <script src="../assets/scripts/participarPartida.js"></script>
+    <script src="../assets/scripts/partida.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</html>
